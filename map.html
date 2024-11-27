@@ -613,7 +613,7 @@
 								</div>
 							</div>
 						</div>
-						<button class="map__filters btn">
+						<button class="map__filters btn" data-modal="contactModal">
 							<span>All Filters</span>
 							<i>
 								<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -660,7 +660,36 @@
 					</div>
 				</div>
 				<div class="map-iframe">
-					<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28771.008531703766!2d-74.05761271813653!3d40.7140595060103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250934b02cba3%3A0xbd6035c2e0daafcc!2z0J_QsNGA0Log0JvQuNCx0LXRgNGC0Lgg0KHRgtGN0LnRgg!5e0!3m2!1sru!2sru!4v1732653522172!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<div class="map-iframe__google">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28771.008531703766!2d-74.05761271813653!3d40.7140595060103!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250934b02cba3%3A0xbd6035c2e0daafcc!2z0J_QsNGA0Log0JvQuNCx0LXRgNGC0Lgg0KHRgtGN0LnRgg!5e0!3m2!1sru!2sru!4v1732653522172!5m2!1sru!2sru" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					</div>
+					<div class="map-iframe__item">
+						<h6 class="map-iframe__item-show">Layers</h6>
+						<div class="map-iframe__item-hidden">
+							<div class="map-iframe__item-close">
+								<svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1 6.5001L6.00001 1.5L11 6.5001" stroke="#0081DF" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+							<div class="map__group">
+								<div class="date">
+									<div class="date__title">NOAA Storm Prediction <br> Center Data</div>
+									<input class="date__input" type="date" lang="eng">
+								</div>
+								<div class="form__file">
+									<div class="file-wrap">
+										<input class="file-input" type="file" name="file[]" accept="" id="attachment">
+										<label>Upload KML/KMZ File</label>
+									</div>
+									<p id="files-area">
+						<span id="filesList">
+							<span id="files-names"></span>
+						</span>
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
 				</div>
 			</section>
 		</main>
@@ -670,5 +699,1334 @@
 <script src="js/main.min.js"></script>
 
 </body>
+
+<div class="modal" id="contactModal">
+	<div class="modal__dialog filters">
+		<div class="filters__top">
+			<h6 class="filters__title">All Filters</h6>
+			<button type="button" class="_close-modal modal__close" data-bs-dismiss="modal" aria-label="Close">
+				<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M1.28633 1.28516L10.7144 10.7132M10.7142 1.28516L1.28613 10.7132" stroke="#0081DF" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+				</svg>
+			</button>
+		</div>
+		<div class="filters__content">
+			<div class="map__items">
+				<div class="map__item item">
+					<div class="map__item-show item-show">
+						<div class="map__item-title">State</div>
+						<div class="map__item-btn">
+							<svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.5 1.5L6.5001 6.50001L1.5 11.5" stroke="#003764" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+						<div class="map__item-number">
+							<span>23</span>
+						</div>
+					</div>
+					<div class="map__item-hidden item-hidden">
+						<div class="map__item-top">
+							<div class="map__item-subtitle">State</div>
+							<div class="map__item-close">
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.28633 1.28516L10.7144 10.7132M10.7142 1.28516L1.28613 10.7132" stroke="#0081DF" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+						</div>
+						<div class="map__item-checkboxes">
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT22868 - Oceanic Partners, Inc.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT24294 - Safe Harbor Insurance</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT36409 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT44527 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT46983 - Liberty E&S Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT54681 - Coastal Risk Management</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT55536 - Hull & Company, LLC</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>XYZ123 - Global Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>LMN789 - Shield Insurance Agency</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>ABC456 - Safe Haven Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>PQR987 - Elite Assurance Group</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>RST654 - Secure Future Insurers</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>JKL321 - Trustworthy Coverage Co.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT22868 - Oceanic Partners, Inc.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT24294 - Safe Harbor Insurance</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT36409 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT44527 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT46983 - Liberty E&S Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT54681 - Coastal Risk Management</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT55536 - Hull & Company, LLC</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>XYZ123 - Global Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>LMN789 - Shield Insurance Agency</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>ABC456 - Safe Haven Underwriters</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="map__item item">
+					<div class="map__item-show item-show">
+						<div class="map__item-title">Lead</div>
+						<div class="map__item-btn">
+							<svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.5 1.5L6.5001 6.50001L1.5 11.5" stroke="#003764" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+						<div class="map__item-number">
+							<span>23</span>
+						</div>
+					</div>
+					<div class="map__item-hidden item-hidden">
+						<div class="map__item-top">
+							<div class="map__item-subtitle">Lead</div>
+							<div class="map__item-close">
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.28633 1.28516L10.7144 10.7132M10.7142 1.28516L1.28613 10.7132" stroke="#0081DF" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+						</div>
+						<div class="map__item-checkboxes">
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT22868 - Oceanic Partners, Inc.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT24294 - Safe Harbor Insurance</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT36409 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT44527 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT46983 - Liberty E&S Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT54681 - Coastal Risk Management</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT55536 - Hull & Company, LLC</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>XYZ123 - Global Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>LMN789 - Shield Insurance Agency</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>ABC456 - Safe Haven Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>PQR987 - Elite Assurance Group</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>RST654 - Secure Future Insurers</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>JKL321 - Trustworthy Coverage Co.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT22868 - Oceanic Partners, Inc.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT24294 - Safe Harbor Insurance</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT36409 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT44527 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT46983 - Liberty E&S Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT54681 - Coastal Risk Management</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT55536 - Hull & Company, LLC</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>XYZ123 - Global Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>LMN789 - Shield Insurance Agency</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>ABC456 - Safe Haven Underwriters</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="map__item item">
+					<div class="map__item-show item-show">
+						<div class="map__item-title">Broker</div>
+						<div class="map__item-btn">
+							<svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.5 1.5L6.5001 6.50001L1.5 11.5" stroke="#003764" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+						<div class="map__item-number">
+							<span>23</span>
+						</div>
+					</div>
+					<div class="map__item-hidden item-hidden">
+						<div class="map__item-top">
+							<div class="map__item-subtitle">Broker</div>
+							<div class="map__item-close">
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.28633 1.28516L10.7144 10.7132M10.7142 1.28516L1.28613 10.7132" stroke="#0081DF" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+						</div>
+						<div class="map__item-checkboxes">
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT22868 - Oceanic Partners, Inc.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT24294 - Safe Harbor Insurance</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT36409 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT44527 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT46983 - Liberty E&S Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT54681 - Coastal Risk Management</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT55536 - Hull & Company, LLC</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>XYZ123 - Global Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>LMN789 - Shield Insurance Agency</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>ABC456 - Safe Haven Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>PQR987 - Elite Assurance Group</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>RST654 - Secure Future Insurers</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>JKL321 - Trustworthy Coverage Co.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT22868 - Oceanic Partners, Inc.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT24294 - Safe Harbor Insurance</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT36409 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT44527 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT46983 - Liberty E&S Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT54681 - Coastal Risk Management</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT55536 - Hull & Company, LLC</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>XYZ123 - Global Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>LMN789 - Shield Insurance Agency</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>ABC456 - Safe Haven Underwriters</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="map__item item">
+					<div class="map__item-show item-show">
+						<div class="map__item-title">Coverholder</div>
+						<div class="map__item-btn">
+							<svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.5 1.5L6.5001 6.50001L1.5 11.5" stroke="#003764" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+						<div class="map__item-number">
+							<span>23</span>
+						</div>
+					</div>
+					<div class="map__item-hidden item-hidden">
+						<div class="map__item-top">
+							<div class="map__item-subtitle">Coverholder</div>
+							<div class="map__item-close">
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.28633 1.28516L10.7144 10.7132M10.7142 1.28516L1.28613 10.7132" stroke="#0081DF" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+						</div>
+						<div class="map__item-checkboxes">
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT22868 - Oceanic Partners, Inc.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT24294 - Safe Harbor Insurance</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT36409 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT44527 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT46983 - Liberty E&S Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT54681 - Coastal Risk Management</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT55536 - Hull & Company, LLC</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>XYZ123 - Global Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>LMN789 - Shield Insurance Agency</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>ABC456 - Safe Haven Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>PQR987 - Elite Assurance Group</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>RST654 - Secure Future Insurers</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>JKL321 - Trustworthy Coverage Co.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT22868 - Oceanic Partners, Inc.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT24294 - Safe Harbor Insurance</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT36409 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT44527 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT46983 - Liberty E&S Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT54681 - Coastal Risk Management</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT55536 - Hull & Company, LLC</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>XYZ123 - Global Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>LMN789 - Shield Insurance Agency</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>ABC456 - Safe Haven Underwriters</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="map__item item">
+					<div class="map__item-show item-show">
+						<div class="map__item-title">UMR</div>
+						<div class="map__item-btn">
+							<svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.5 1.5L6.5001 6.50001L1.5 11.5" stroke="#003764" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+						<div class="map__item-number">
+							<span>23</span>
+						</div>
+					</div>
+					<div class="map__item-hidden item-hidden">
+						<div class="map__item-top">
+							<div class="map__item-subtitle">UMR</div>
+							<div class="map__item-close">
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.28633 1.28516L10.7144 10.7132M10.7142 1.28516L1.28613 10.7132" stroke="#0081DF" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+						</div>
+						<div class="map__item-checkboxes">
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT22868 - Oceanic Partners, Inc.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT24294 - Safe Harbor Insurance</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT36409 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT44527 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT46983 - Liberty E&S Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT54681 - Coastal Risk Management</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT55536 - Hull & Company, LLC</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>XYZ123 - Global Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>LMN789 - Shield Insurance Agency</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>ABC456 - Safe Haven Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>PQR987 - Elite Assurance Group</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>RST654 - Secure Future Insurers</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>JKL321 - Trustworthy Coverage Co.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT22868 - Oceanic Partners, Inc.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT24294 - Safe Harbor Insurance</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT36409 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT44527 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT46983 - Liberty E&S Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT54681 - Coastal Risk Management</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT55536 - Hull & Company, LLC</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>XYZ123 - Global Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>LMN789 - Shield Insurance Agency</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>ABC456 - Safe Haven Underwriters</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="map__item item">
+					<div class="map__item-show item-show">
+						<div class="map__item-title">Building Limits</div>
+						<div class="map__item-btn">
+							<svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.5 1.5L6.5001 6.50001L1.5 11.5" stroke="#003764" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+						<div class="map__item-number">
+							<span>23</span>
+						</div>
+					</div>
+					<div class="map__item-hidden item-hidden">
+						<div class="map__item-top">
+							<div class="map__item-subtitle">Building Limits</div>
+							<div class="map__item-close">
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.28633 1.28516L10.7144 10.7132M10.7142 1.28516L1.28613 10.7132" stroke="#0081DF" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+						</div>
+						<div class="map__item-checkboxes">
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT22868 - Oceanic Partners, Inc.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT24294 - Safe Harbor Insurance</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT36409 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT44527 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT46983 - Liberty E&S Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT54681 - Coastal Risk Management</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT55536 - Hull & Company, LLC</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>XYZ123 - Global Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>LMN789 - Shield Insurance Agency</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>ABC456 - Safe Haven Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>PQR987 - Elite Assurance Group</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>RST654 - Secure Future Insurers</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>JKL321 - Trustworthy Coverage Co.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT22868 - Oceanic Partners, Inc.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT24294 - Safe Harbor Insurance</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT36409 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT44527 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT46983 - Liberty E&S Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT54681 - Coastal Risk Management</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT55536 - Hull & Company, LLC</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>XYZ123 - Global Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>LMN789 - Shield Insurance Agency</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>ABC456 - Safe Haven Underwriters</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="map__item item">
+					<div class="map__item-show item-show">
+						<div class="map__item-title">Total Policy Limit</div>
+						<div class="map__item-btn">
+							<svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.5 1.5L6.5001 6.50001L1.5 11.5" stroke="#003764" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+						<div class="map__item-number">
+							<span>23</span>
+						</div>
+					</div>
+					<div class="map__item-hidden item-hidden">
+						<div class="map__item-top">
+							<div class="map__item-subtitle">Total Policy Limit</div>
+							<div class="map__item-close">
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.28633 1.28516L10.7144 10.7132M10.7142 1.28516L1.28613 10.7132" stroke="#0081DF" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+						</div>
+						<div class="map__item-checkboxes">
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT22868 - Oceanic Partners, Inc.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT24294 - Safe Harbor Insurance</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT36409 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT44527 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT46983 - Liberty E&S Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT54681 - Coastal Risk Management</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT55536 - Hull & Company, LLC</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>XYZ123 - Global Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>LMN789 - Shield Insurance Agency</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>ABC456 - Safe Haven Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>PQR987 - Elite Assurance Group</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>RST654 - Secure Future Insurers</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>JKL321 - Trustworthy Coverage Co.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT22868 - Oceanic Partners, Inc.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT24294 - Safe Harbor Insurance</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT36409 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT44527 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT46983 - Liberty E&S Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT54681 - Coastal Risk Management</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT55536 - Hull & Company, LLC</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>XYZ123 - Global Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>LMN789 - Shield Insurance Agency</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>ABC456 - Safe Haven Underwriters</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="map__item item">
+					<div class="map__item-show item-show">
+						<div class="map__item-title">Wind Coverage</div>
+						<div class="map__item-btn">
+							<svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.5 1.5L6.5001 6.50001L1.5 11.5" stroke="#003764" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+						<div class="map__item-number">
+							<span>23</span>
+						</div>
+					</div>
+					<div class="map__item-hidden item-hidden">
+						<div class="map__item-top">
+							<div class="map__item-subtitle">Wind Coverage</div>
+							<div class="map__item-close">
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.28633 1.28516L10.7144 10.7132M10.7142 1.28516L1.28613 10.7132" stroke="#0081DF" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+						</div>
+						<div class="map__item-checkboxes">
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT22868 - Oceanic Partners, Inc.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT24294 - Safe Harbor Insurance</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT36409 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT44527 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT46983 - Liberty E&S Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT54681 - Coastal Risk Management</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT55536 - Hull & Company, LLC</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>XYZ123 - Global Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>LMN789 - Shield Insurance Agency</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>ABC456 - Safe Haven Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>PQR987 - Elite Assurance Group</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>RST654 - Secure Future Insurers</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>JKL321 - Trustworthy Coverage Co.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT22868 - Oceanic Partners, Inc.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT24294 - Safe Harbor Insurance</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT36409 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT44527 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT46983 - Liberty E&S Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT54681 - Coastal Risk Management</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT55536 - Hull & Company, LLC</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>XYZ123 - Global Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>LMN789 - Shield Insurance Agency</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>ABC456 - Safe Haven Underwriters</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="map__item item">
+					<div class="map__item-show item-show">
+						<div class="map__item-title">Flood Coverage</div>
+						<div class="map__item-btn">
+							<svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.5 1.5L6.5001 6.50001L1.5 11.5" stroke="#003764" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+						<div class="map__item-number">
+							<span>23</span>
+						</div>
+					</div>
+					<div class="map__item-hidden item-hidden">
+						<div class="map__item-top">
+							<div class="map__item-subtitle">Flood Coverage</div>
+							<div class="map__item-close">
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.28633 1.28516L10.7144 10.7132M10.7142 1.28516L1.28613 10.7132" stroke="#0081DF" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+						</div>
+						<div class="map__item-checkboxes">
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT22868 - Oceanic Partners, Inc.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT24294 - Safe Harbor Insurance</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT36409 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT44527 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT46983 - Liberty E&S Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT54681 - Coastal Risk Management</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT55536 - Hull & Company, LLC</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>XYZ123 - Global Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>LMN789 - Shield Insurance Agency</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>ABC456 - Safe Haven Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>PQR987 - Elite Assurance Group</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>RST654 - Secure Future Insurers</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>JKL321 - Trustworthy Coverage Co.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT22868 - Oceanic Partners, Inc.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT24294 - Safe Harbor Insurance</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT36409 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT44527 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT46983 - Liberty E&S Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT54681 - Coastal Risk Management</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT55536 - Hull & Company, LLC</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>XYZ123 - Global Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>LMN789 - Shield Insurance Agency</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>ABC456 - Safe Haven Underwriters</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="map__item item">
+					<div class="map__item-show item-show">
+						<div class="map__item-title">CAT Start Date</div>
+						<div class="map__item-btn">
+							<svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.5 1.5L6.5001 6.50001L1.5 11.5" stroke="#003764" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+						<div class="map__item-number">
+							<span>23</span>
+						</div>
+					</div>
+					<div class="map__item-hidden item-hidden">
+						<div class="map__item-top">
+							<div class="map__item-subtitle">CAT Start Date</div>
+							<div class="map__item-close">
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.28633 1.28516L10.7144 10.7132M10.7142 1.28516L1.28613 10.7132" stroke="#0081DF" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+						</div>
+						<div class="map__item-checkboxes">
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT22868 - Oceanic Partners, Inc.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT24294 - Safe Harbor Insurance</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT36409 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT44527 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT46983 - Liberty E&S Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT54681 - Coastal Risk Management</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT55536 - Hull & Company, LLC</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>XYZ123 - Global Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>LMN789 - Shield Insurance Agency</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>ABC456 - Safe Haven Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>PQR987 - Elite Assurance Group</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>RST654 - Secure Future Insurers</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>JKL321 - Trustworthy Coverage Co.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT22868 - Oceanic Partners, Inc.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT24294 - Safe Harbor Insurance</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT36409 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT44527 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT46983 - Liberty E&S Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT54681 - Coastal Risk Management</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT55536 - Hull & Company, LLC</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>XYZ123 - Global Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>LMN789 - Shield Insurance Agency</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>ABC456 - Safe Haven Underwriters</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="map__item item">
+					<div class="map__item-show item-show">
+						<div class="map__item-title">CAT End Date</div>
+						<div class="map__item-btn">
+							<svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1.5 1.5L6.5001 6.50001L1.5 11.5" stroke="#003764" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+							</svg>
+						</div>
+						<div class="map__item-number">
+							<span>23</span>
+						</div>
+					</div>
+					<div class="map__item-hidden item-hidden">
+						<div class="map__item-top">
+							<div class="map__item-subtitle">CAT End Date</div>
+							<div class="map__item-close">
+								<svg width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M1.28633 1.28516L10.7144 10.7132M10.7142 1.28516L1.28613 10.7132" stroke="#0081DF" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"/>
+								</svg>
+							</div>
+						</div>
+						<div class="map__item-checkboxes">
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT22868 - Oceanic Partners, Inc.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT24294 - Safe Harbor Insurance</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT36409 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT44527 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT46983 - Liberty E&S Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT54681 - Coastal Risk Management</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT55536 - Hull & Company, LLC</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>XYZ123 - Global Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>LMN789 - Shield Insurance Agency</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>ABC456 - Safe Haven Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>PQR987 - Elite Assurance Group</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>RST654 - Secure Future Insurers</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>JKL321 - Trustworthy Coverage Co.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT22868 - Oceanic Partners, Inc.</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT24294 - Safe Harbor Insurance</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT36409 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT44527 - Summit Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT46983 - Liberty E&S Underwriters</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT54681 - Coastal Risk Management</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>AGT55536 - Hull & Company, LLC</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>XYZ123 - Global Risk Solutions</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>LMN789 - Shield Insurance Agency</label>
+							</div>
+							<div class="map__item-checkbox">
+								<input type="checkbox">
+								<label>ABC456 - Safe Haven Underwriters</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="map__group">
+				<div class="date">
+					<div class="date__title">NOAA Storm Prediction <br> Center Data</div>
+					<input class="date__input" type="date" lang="eng">
+				</div>
+				<div class="form__file">
+					<div class="file-wrap">
+						<input class="file-input" type="file" name="file[]" accept="" id="attachment">
+						<label>Upload KML/KMZ File</label>
+					</div>
+					<p id="files-area">
+						<span id="filesList">
+							<span id="files-names"></span>
+						</span>
+					</p>
+				</div>
+			</div>
+			<div class="map__btns">
+				<button class="map__reset btn">
+					<span>Reset filters</span>
+				</button>
+				<button class="map__btn btn btn-blue">
+					<span>Apply</span>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>
 
 </html>
